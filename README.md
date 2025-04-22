@@ -1,7 +1,7 @@
 # 🕵️ Stealth Flask Backdoor
 
 
-Este microservidor Flask simula una puerta trasera para ejecutar pruebas de penetración y técnicas de evasión en entornos controlados.
+Este microservidor Flask simula una puerta trasera
 
 ## 🚀 Funcionalidades
 
@@ -21,7 +21,7 @@ Este microservidor Flask simula una puerta trasera para ejecutar pruebas de pene
 | Payload                                             | Descripción                             |
 |-----------------------------------------------------|-----------------------------------------|
 | `print("Hola mundo")`                              | Imprime en consola del servidor         |
-| `open("flag.txt", "w").write("✅")`                 | Escribe un archivo de texto             |
+| `open("flag.txt", "w").write("")`                 | Escribe un archivo de texto             |
 | `__import__('os').system('ls')`                     | Ejecuta un comando del sistema          |
 | `__import__('socket').gethostbyname(...)`           | Obtener la IP del servidor              |
 | `__import__('shutil').copy("f", "dest")`            | Copiar archivos                         |
@@ -39,11 +39,9 @@ Registro: acción ejecutada
 
 🌐 Exposición remota
 ¿No estás en red pública? Usa ngrok:
-
-bash
-Copiar
-Editar
+```bash
 ngrok http 5000
+```   
 Y luego accede desde cualquier parte del mundo vía HTTPS.
 
 
