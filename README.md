@@ -80,9 +80,10 @@ curl -X POST "http://<host>:5000/.well-known/assets?act=script" \
 
 ---
 
-TODO / Mejoras futuras
- Añadir cifrado AES a los scripts
+ Mejoras futuras
+ 
+ - Añadir cifrado AES a los scripts
 
- Backdoor activada por Redis
+ - Backdoor activada por Redis
 
- Modos silenciosos de respuesta (stealth logs, autolimpieza)
+ - Modos silenciosos de respuesta (stealth logs, autolimpieza)
