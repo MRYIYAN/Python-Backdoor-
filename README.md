@@ -47,9 +47,11 @@ Y luego accede desde cualquier parte del mundo vía HTTPS.
 ## 📦 Ejecución
 
 📡 Activación remota (desde otra máquina)
-Requisitos:
+
 Agregar el header:
-X-Auth-Token: U3VwZXJTZWNyZXQ=
+
+- X-Auth-Token: U3VwZXJTZWNyZXQ=                  
+
 🔥 Ejecutar código Python:
 ```bash
 curl -X POST "http://<host>:5000/.well-known/assets?act=ejecutar" \
